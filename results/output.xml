@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220206 13:57:43.448" rpa="false" schemaversion="2">
+<suite id="s1" name="Robot-curso" source="C:\Users\Gaah_\Desktop\Robot-curso">
+<suite id="s1-s1" name="SiteAmazon" source="C:\Users\Gaah_\Desktop\Robot-curso\SiteAmazon">
+<suite id="s1-s1-s1" name="Tests" source="C:\Users\Gaah_\Desktop\Robot-curso\SiteAmazon\tests">
+<suite id="s1-s1-s1-s1" name="TestSiteAmazon" source="C:\Users\Gaah_\Desktop\Robot-curso\SiteAmazon\tests\TestSiteAmazon.robot">
+<test id="s1-s1-s1-s1-t1" name="Caso de teste 01: Login">
+<kw name="Abrir navegador" library="ResourceAmazon" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://google.com.br</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220206 13:57:43.625" level="INFO">Opening browser 'Chrome' to base url 'http://google.com.br'.</msg>
+<status status="PASS" starttime="20220206 13:57:43.624" endtime="20220206 13:57:47.025"/>
+</kw>
+<status status="PASS" starttime="20220206 13:57:43.624" endtime="20220206 13:57:47.025"/>
+</kw>
+<kw name="Acessar a pagina home do site" library="ResourceAmazon">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Amazon.com.br | Compre livros, Kindle, Echo, Fire Tv e mais.</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220206 13:57:47.104" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220206 13:57:47.104" level="FAIL">Title should have been 'Amazon.com.br | Compre livros, Kindle, Echo, Fire Tv e mais.' but was 'Google'.</msg>
+<status status="FAIL" starttime="20220206 13:57:47.026" endtime="20220206 13:57:47.104"/>
+</kw>
+<status status="FAIL" starttime="20220206 13:57:47.025" endtime="20220206 13:57:47.104"/>
+</kw>
+<kw name="Clicar em faça seu login" library="ResourceAmazon">
+<status status="NOT RUN" starttime="20220206 13:57:47.110" endtime="20220206 13:57:47.110"/>
+</kw>
+<kw name="Informar email e continuar" library="ResourceAmazon">
+<status status="NOT RUN" starttime="20220206 13:57:47.110" endtime="20220206 13:57:47.110"/>
+</kw>
+<kw name="Informar senha e clicar em fazer login" library="ResourceAmazon">
+<status status="NOT RUN" starttime="20220206 13:57:47.111" endtime="20220206 13:57:47.111"/>
+</kw>
+<kw name="Fechar navegador" library="ResourceAmazon" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220206 13:57:47.112" endtime="20220206 13:57:49.163"/>
+</kw>
+<status status="PASS" starttime="20220206 13:57:47.111" endtime="20220206 13:57:49.163"/>
+</kw>
+<status status="FAIL" starttime="20220206 13:57:43.623" endtime="20220206 13:57:49.164">Title should have been 'Amazon.com.br | Compre livros, Kindle, Echo, Fire Tv e mais.' but was 'Google'.</status>
+</test>
+<status status="FAIL" starttime="20220206 13:57:43.476" endtime="20220206 13:57:49.165"/>
+</suite>
+<status status="FAIL" starttime="20220206 13:57:43.474" endtime="20220206 13:57:49.167"/>
+</suite>
+<status status="FAIL" starttime="20220206 13:57:43.471" endtime="20220206 13:57:49.169"/>
+</suite>
+<status status="FAIL" starttime="20220206 13:57:43.451" endtime="20220206 13:57:49.170"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Robot-curso">Robot-curso</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="SiteAmazon">Robot-curso.SiteAmazon</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Tests">Robot-curso.SiteAmazon.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="TestSiteAmazon">Robot-curso.SiteAmazon.Tests.TestSiteAmazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
